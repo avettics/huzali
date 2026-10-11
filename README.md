@@ -16,9 +16,13 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `app/(site)/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses `next/font` to self-host Manrope (`font-sans`), Playfair Display (`font-heading`), and Geist Mono (`font-mono`). The semantic Tailwind v4 theme is defined in `app/globals.css`.
+
+Run `npm run lint`, `npx --no-install tsc --noEmit`, and `npm run build` before shipping changes. The build needs access to Google Fonts when font files are not cached.
+
+The Home page is a foundation placeholder. Navigation destinations are planned routes, and the social links currently use `#`; replace those placeholders before public launch.
 
 ## Learn More
 
